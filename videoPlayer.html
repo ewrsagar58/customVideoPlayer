@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link href="material_Icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div class="back">
+        <i class="material-icons"><a href="index.html">arrow_back</a></i>
+    </div>
+    <div class="windowLoading">
+        <div class="windowLoading_bar"></div>
+    </div>
+    <div class="video" id="videoCon">
+        <div class="overlay" id="videoLayer">
+            <div class="forward_backward">
+                <i class="material-icons" id="reward">replay_5</i>
+                <div class="loading_bar" id="loading_bar"></div>
+                <p id="for_back_inner_text">
+
+                </p>
+                <i class="large material-icons" id="forward">forward_5</i>
+            </div>
+
+        </div>
+        <video width="100%" height="100%" id="myVideo"></video>
+        <div class="videoControls" id="videoControls">
+            <div class="videoRange">
+                <input type="range" min="0" max="" id="videoRange">
+            </div>
+            <div class="controls">
+                <div class="volumeControl">
+                    <i class="material-icons" id="volumeIcon">volume_up</i>
+                    <input type="range" id="range" min="10" max="99" value="20">
+                </div>
+                <div class="middle">
+                    <span class="timer" id="currentVideoTime"></span>
+                    <i class="material-icons" id="playPause"></i>
+                    <span class="timer" id="fullVideoTime"></span>
+                </div>
+                <i class="material-icons" id="fullScreen">fullscreen</i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

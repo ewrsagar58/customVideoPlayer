@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Video Direct Link</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #141414;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* .inputField {
+            width: 60%;
+        } */
+        .butonField {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inputField input[type="text"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            outline: none;
+            padding: 10px;
+            font-size: 1.2rem;
+            border: 2px solid #ffffff;
+            text-align: center;
+            transition: 0.3s linear;
+        }
+
+        .inputField input[type="text"]:focus {
+            border-color: #37bbeb;
+            border-radius: 0px;
+        }
+
+        .inputField input[type="submit"],
+        .inputField input[type="reset"] {
+            width: 40%;
+            height: 30px;
+            outline: none;
+            background-color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inputField">
+        <h2 style="color: #fff; margin-bottom: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Enter Video
+            Direct Link</h2>
+        <form action="videoPlayer.html" method="get">
+            <input type="text" name="videoSrc">
+            <div class="butonField">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
